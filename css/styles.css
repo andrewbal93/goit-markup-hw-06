@@ -43,6 +43,7 @@ body {
 
 img {
   display: block;
+  margin: 0 auto;
 }
 
 .list {
@@ -331,7 +332,18 @@ img {
 
 .sct_four {
   background-color: var(--prgrf);
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .sct_four {
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .sct_four {
+    padding: 120px 0;
+  }
 }
 
 .sct_four-mainttl {
@@ -341,7 +353,6 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue);
-  margin-bottom: 72px;
 }
 
 .sct_four-ttl {
@@ -355,16 +366,52 @@ img {
 }
 
 .sct_four-list {
-  display: flex;
-  gap: 24px;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .sct_four-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .sct_four-list {
+    gap: 24px;
+  }
 }
 
 .sct_four-list-li {
-  width: calc((100% - 72px) / 4);
+  display: block;
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+@media only screen and (max-width: 767px) {
+  .sct_four-list-li:not(:last-child) {
+    margin: 72px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sct_four-list-li {
+    width: calc((100% - 24px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .sct_four-list-li {
+    width: calc((100% - 72px) / 4);
+  }
 }
 
 .personal-info {
