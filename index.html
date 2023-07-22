@@ -25,7 +25,7 @@
   <body>
     <!-- Header section -->
 
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="header-content container">
         <nav class="header-nav">
           <a class="header-logo link" href="./index.html"
@@ -36,6 +36,15 @@
             <li><a class="nav-link link" href="./portfolio.html">Portfolio</a></li>
             <li><a class="nav-link link" href="">Contacts</a></li>
           </ul>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-toggle-icon" width="32" height="22">
+              <use href="./images/icons.svg#menu-icon" />
+            </svg>
+          </button>
         </nav>
         <address class="contacts">
           <ul class="address-contacts list">
@@ -44,18 +53,18 @@
           </ul>
         </address>
       </div>
-    </header> -->
+    </header>
 
     <!-- Main section -->
     <main>
       <!-- Section 1 Hero -->
 
-      <!-- <section class="sct_one-hero">
+      <section class="sct_one-hero">
         <div class="container">
           <h1 class="sct_one-hero-title">Effective Solutions for Your Business</h1>
           <button class="sct_one-hero-btn" type="button" data-modal-open>Order Service</button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Section 2 -->
 
@@ -350,7 +359,7 @@
     </main>
     <!-- Footer -->
 
-    <!-- <footer class="footer-sct">
+    <footer class="footer-sct">
       <div class="footer-container container">
         <div class="footer-logo-dscr">
           <a class="footer-logo link" href="./index.html"
@@ -415,14 +424,14 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Modal Window -->
 
     <div class="modal-window-div is-hidden" data-modal>
       <div class="modal-window">
         <button type="button" class="modal-window-closebtn" data-modal-close>
-          <svg width="8" height="8" class="modal-window-closebtn-icon">
+          <svg width="24" height="24" class="modal-window-closebtn-icon">
             <use href="./images/icons.svg#icon-close" />
           </svg>
         </button>
@@ -484,8 +493,10 @@
                   <use href="./images/icons.svg#icon-Vector" />
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="userprivacy-link">Privacy Policy</a>
+              <span class="userprivacy-text">
+                I accept the terms and conditions of the
+                <a href="" class="userprivacy-link">Privacy Policy</a>
+              </span>
             </label>
           </div>
 
@@ -493,6 +504,76 @@
         </form>
       </div>
     </div>
+
+    <!-- Mobile-Menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg fill="currentColor" width="24" height="24">
+          <use href="./images/icons.svg#icon-close" />
+        </svg>
+      </button>
+
+      <div class="mobile-menu_subcontainer">
+        <ul class="mobile-menu">
+          <li class="mobile-menu-item"><a href="" class="link mobile-menu-active">Studio</a></li>
+          <li class="mobile-menu-item"><a href="/portfolio.html" class="link">Portfolio</a></li>
+          <li class="mobile-menu-item"><a href="" class="link">Contacts</a></li>
+        </ul>
+        <ul class="mobile-menu_contacts list">
+          <li class="mobile-menu_phone">
+            <a class="mobile-menu_phone-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="mobile-menu_email">
+            <a class="mobile-menu_email-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-menu_social">
+            <ul class="mobile-menu_social-list list">
+              <li class="mobile-menu_socialnet_ico">
+                <a href="" class="socialnet_ico-link">
+                  <svg class="snet-ico" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu_socialnet_ico">
+                <a href="" class="socialnet_ico-link">
+                  <svg class="snet-ico" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu_socialnet_ico">
+                <a href="" class="socialnet_ico-link">
+                  <svg class="snet-ico" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu_socialnet_ico">
+                <a href="" class="socialnet_ico-link">
+                  <svg class="snet-ico" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="./js/mobile-menu.js"></script>
+
     <script src="./modal.js"></script>
   </body>
 </html>
