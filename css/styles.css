@@ -147,14 +147,7 @@ img {
 }
 
 .header-menu {
-  /* display: flex;
-  gap: 40px; */
-}
-
-@media only screen and (max-width: 767px) {
-  .header-menu {
-    display: none;
-  }
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -406,11 +399,6 @@ img {
 .sct_four {
   background-color: var(--prgrf);
   padding: 96px 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .sct_four {
-  }
 }
 
 @media only screen and (min-width: 1158px) {
