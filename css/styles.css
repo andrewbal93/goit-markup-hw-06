@@ -44,6 +44,8 @@ body {
 img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -227,6 +229,13 @@ img {
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .sct_one-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/Main/people-office\ 1@2x.jpg);
+  }
 }
 
 @media only screen and (min-width: 1158px) {
