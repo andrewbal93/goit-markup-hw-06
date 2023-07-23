@@ -131,14 +131,25 @@
           <h2 class="sct_three-mainttl">What are we doing</h2>
           <ul class="sct_three-list list">
             <li class="sct_three-list-li">
-              <img src="./images/Main/Rectangle71-2.jpg" alt="web-site on monitor" width="360" />
-            </li>
-            <li class="sct_three-list-li">
-              <img src="./images/Main/Rectangle71-1.jpg" alt="phone applications" width="360" />
+              <img
+                srcset="./images/Main/dir 1@1x.jpg 1x, ./images/Main/dir 1@2x.jpg 2x"
+                src="./images/Main/dir 1@1x.jpg"
+                alt="web-site on monitor"
+                width="360"
+              />
             </li>
             <li class="sct_three-list-li">
               <img
-                src="./images/Main/Rectangle71.jpg"
+                srcset="./images/Main/dir 2@1x.jpg 1x, ./images/Main/dir 2@2x.jpg 2x"
+                src="./images/Main/dir 2@1x.jpg"
+                alt="phone applications"
+                width="360"
+              />
+            </li>
+            <li class="sct_three-list-li">
+              <img
+                srcset="./images/Main/dir 3@1x.jpg 1x, ./images/Main/dir 3@2x.jpg 2x"
+                src="./images/Main/dir 3@1x.jpg"
                 alt="crossplatform applications"
                 width="360"
               />
@@ -154,7 +165,12 @@
           <h2 class="sct_four-mainttl">Our Team</h2>
           <ul class="sct_four-list list">
             <li class="sct_four-list-li">
-              <img src="./images/Main/img-3.jpg" alt="Specialist #1" width="264" />
+              <img
+                srcset="./images/Main/team-img1@1x.jpg 1x, ./images/Main/team-img1@2x.jpg 2x"
+                src="./images/Main/team-img1@1x.jpg"
+                alt="Specialist #1"
+                width="264"
+              />
               <div class="personal-info">
                 <h3 class="sct_four-ttl">Mark Guerrero</h3>
                 <p class="sct_four-prgrf">Product Designer</p>
@@ -191,7 +207,12 @@
               </div>
             </li>
             <li class="sct_four-list-li">
-              <img src="./images/Main/img-2.jpg" alt="Specialist #2" width="264" />
+              <img
+                srcset="./images/Main/team-img2@1x.jpg 1x, ./images/Main/team-img2@2x.jpg 2x"
+                src="./images/Main/team-img2@1x.jpg"
+                alt="Specialist #2"
+                width="264"
+              />
               <div class="personal-info">
                 <h3 class="sct_four-ttl">Tom Ford</h3>
                 <p class="sct_four-prgrf">Frontend Developer</p>
@@ -228,7 +249,12 @@
               </div>
             </li>
             <li class="sct_four-list-li">
-              <img src="./images/Main/img-1.jpg" alt="Specialist #3" width="264" />
+              <img
+                srcset="./images/Main/team-img3@1x.jpg 1x, ./images/Main/team-img3@2x.jpg 2x"
+                src="./images/Main/team-img3@1x.jpg"
+                alt="Specialist #3"
+                width="264"
+              />
               <div class="personal-info">
                 <h3 class="sct_four-ttl">Camila Garcia</h3>
                 <p class="sct_four-prgrf">Marketing</p>
@@ -265,7 +291,12 @@
               </div>
             </li>
             <li class="sct_four-list-li">
-              <img src="./images/Main/img.jpg" alt="Specialist #4" width="264" />
+              <img
+                srcset="./images/Main/team-img4@1x.jpg 1x, ./images/Main/team-img4@2x.jpg 2x"
+                src="./images/Main/team-img4@1x.jpg"
+                alt="Specialist #4"
+                width="264"
+              />
               <div class="personal-info">
                 <h3 class="sct_four-ttl">Daniel Wilson</h3>
                 <p class="sct_four-prgrf">UI Designer</p>
@@ -515,53 +546,56 @@
       </button>
 
       <div class="mobile-menu_subcontainer">
-        <ul class="mobile-menu">
+        <ul class="mobile-menu list">
           <li class="mobile-menu-item"><a href="" class="link mobile-menu-active">Studio</a></li>
           <li class="mobile-menu-item"><a href="./portfolio.html" class="link">Portfolio</a></li>
           <li class="mobile-menu-item"><a href="" class="link">Contacts</a></li>
         </ul>
-        <ul class="mobile-menu_contacts list">
-          <li class="mobile-menu_phone">
-            <a class="mobile-menu_phone-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-          </li>
-          <li class="mobile-menu_email">
-            <a class="mobile-menu_email-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="mobile-menu_social">
-            <ul class="mobile-menu_social-list list">
-              <li class="mobile-menu_socialnet_ico">
-                <a href="" class="socialnet_ico-link">
-                  <svg class="snet-ico" width="24" height="24">
-                    <use href="./images/icons.svg#icon-facebook" />
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-menu_socialnet_ico">
-                <a href="" class="socialnet_ico-link">
-                  <svg class="snet-ico" width="24" height="24">
-                    <use href="./images/icons.svg#icon-instagram" />
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-menu_socialnet_ico">
-                <a href="" class="socialnet_ico-link">
-                  <svg class="snet-ico" width="24" height="24">
-                    <use href="./images/icons.svg#icon-linkedin" />
-                  </svg>
-                </a>
-              </li>
-              <li class="mobile-menu_socialnet_ico">
-                <a href="" class="socialnet_ico-link">
-                  <svg class="snet-ico" width="24" height="24">
-                    <use href="./images/icons.svg#icon-twitter" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+
+        <div class="mobile-menu_contacts-div">
+          <ul class="mobile-menu_contacts list">
+            <li class="mobile-menu_phone">
+              <a class="mobile-menu_phone-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu_email">
+              <a class="mobile-menu_email-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu_social-list list">
+            <li class="mobile-menu_socialnet_ico">
+              <a href="" class="socialnet_ico-link">
+                <svg class="snet-ico" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu_socialnet_ico">
+              <a href="" class="socialnet_ico-link">
+                <svg class="snet-ico" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram" />
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu_socialnet_ico">
+              <a href="" class="socialnet_ico-link">
+                <svg class="snet-ico" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin" />
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu_socialnet_ico">
+              <a href="" class="socialnet_ico-link">
+                <svg class="snet-ico" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
