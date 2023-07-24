@@ -89,7 +89,7 @@ img {
 
 .container {
   min-width: 320px;
-  max-width: 767px;
+  max-width: 428px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -487,13 +487,15 @@ img {
 .sct_four-list-li {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
+  width: 264px;
+  margin: 0 auto;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 @media only screen and (max-width: 767px) {
   .sct_four-list-li:not(:last-child) {
-    margin: 72px 0;
+    margin-bottom: 72px;
   }
 }
 
@@ -558,12 +560,6 @@ img {
 
 .sct_five {
   padding: 96px 0;
-}
-
-@media only screen and (max-width: 767px) {
-  .sct_five .container {
-    max-width: 428px;
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
@@ -658,8 +654,8 @@ img {
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 92px;
     gap: 72px 24px;
+    width: 552px;
   }
 }
 
@@ -667,6 +663,7 @@ img {
   .footer-container {
     flex-wrap: nowrap;
     gap: 0;
+    width: 1125px;
   }
 }
 
