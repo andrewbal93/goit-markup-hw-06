@@ -658,7 +658,7 @@ img {
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 92px;
+    margin: 0 auto;
     gap: 72px 24px;
   }
 }
